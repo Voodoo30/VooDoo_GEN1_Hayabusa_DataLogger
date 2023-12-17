@@ -737,26 +737,26 @@ Public Class Main
 
         TPS_Grid.ColumnCount = 23
         TPS_Grid.RowCount = 42
-        TPS_Grid.DefaultCellStyle.Font = New Font("Tahoma", 5)
+        'TPS_Grid.DefaultCellStyle.Font = New Font("Tahoma", 5)
         TPS_Grid.RowHeadersVisible = True
         TPS_Grid.EnableHeadersVisualStyles = False
 
         IAP_Grid.ColumnCount = 21
         IAP_Grid.RowCount = 42
-        IAP_Grid.DefaultCellStyle.Font = New Font("Tahoma", 5)
+        'IAP_Grid.DefaultCellStyle.Font = New Font("Tahoma", 5)
         IAP_Grid.RowHeadersVisible = True
         IAP_Grid.EnableHeadersVisualStyles = False
 
         'Initialize TPS Grid
         For i = 0 To 22
             TPS_Grid.Columns.Item(i).HeaderText = TPS_Header(i).ToString()
-            TPS_Grid.Columns.Item(i).Width = 22
-            TPS_Grid.Columns(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
+            TPS_Grid.Columns.Item(i).Width = 25
+            'TPS_Grid.Columns(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
         Next
         For i = 0 To 41
             TPS_Grid.Rows.Item(i).HeaderCell.Value = RPM_Rows(i).ToString()
-            TPS_Grid.Rows.Item(i).Height = 15
-            TPS_Grid.Rows(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
+            TPS_Grid.Rows.Item(i).Height = 18
+            'TPS_Grid.Rows(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
         Next
         'set all 0s
         For i = 0 To 22
@@ -768,13 +768,13 @@ Public Class Main
         'Initialize IAP Grid
         For i = 0 To 20
             IAP_Grid.Columns.Item(i).HeaderText = IAP_Header(i).ToString()
-            IAP_Grid.Columns.Item(i).Width = 22
-            IAP_Grid.Columns(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
+            IAP_Grid.Columns.Item(i).Width = 25
+            'IAP_Grid.Columns(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
         Next
         For i = 0 To 41
             IAP_Grid.Rows.Item(i).HeaderCell.Value = RPM_Rows(i).ToString
-            IAP_Grid.Rows.Item(i).Height = 15
-            IAP_Grid.Rows(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
+            IAP_Grid.Rows.Item(i).Height = 18
+            'IAP_Grid.Rows(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
         Next
         'set all 0s
         For i = 0 To 20
