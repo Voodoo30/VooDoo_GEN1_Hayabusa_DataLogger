@@ -65,7 +65,6 @@ Partial Class Main
         Me.ECU_MAP_text = New System.Windows.Forms.Label()
         Me.O2_text = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.status_Text = New System.Windows.Forms.Label()
         Me.save_dataLog = New System.Windows.Forms.Button()
         Me.IAT_text = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -82,6 +81,8 @@ Partial Class Main
         Me.Help_About_BTN = New System.Windows.Forms.Button()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.HighCLT_input = New System.Windows.Forms.TextBox()
+        Me.status_Text = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         CType(Me.TPS_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IAP_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -159,7 +160,7 @@ Partial Class Main
         Me.Logging_OnOff.AutoSize = True
         Me.Logging_OnOff.Enabled = False
         Me.Logging_OnOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Logging_OnOff.Location = New System.Drawing.Point(7, 510)
+        Me.Logging_OnOff.Location = New System.Drawing.Point(7, 553)
         Me.Logging_OnOff.MinimumSize = New System.Drawing.Size(103, 32)
         Me.Logging_OnOff.Name = "Logging_OnOff"
         Me.Logging_OnOff.Size = New System.Drawing.Size(119, 32)
@@ -409,23 +410,11 @@ Partial Class Main
         Me.Label24.Text = "O2 A/F"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'status_Text
-        '
-        Me.status_Text.AutoSize = True
-        Me.status_Text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.status_Text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.status_Text.Location = New System.Drawing.Point(12, 448)
-        Me.status_Text.MinimumSize = New System.Drawing.Size(200, 50)
-        Me.status_Text.Name = "status_Text"
-        Me.status_Text.Size = New System.Drawing.Size(200, 50)
-        Me.status_Text.TabIndex = 35
-        Me.status_Text.Text = "None"
-        '
         'save_dataLog
         '
         Me.save_dataLog.AutoSize = True
         Me.save_dataLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.save_dataLog.Location = New System.Drawing.Point(7, 548)
+        Me.save_dataLog.Location = New System.Drawing.Point(7, 591)
         Me.save_dataLog.MinimumSize = New System.Drawing.Size(103, 32)
         Me.save_dataLog.Name = "save_dataLog"
         Me.save_dataLog.Size = New System.Drawing.Size(157, 32)
@@ -471,7 +460,7 @@ Partial Class Main
         Me.TPS_Grid.BackgroundColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!)
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!)
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
@@ -501,9 +490,11 @@ Partial Class Main
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.TPS_Grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.TPS_Grid.RowHeadersWidth = 50
+        Me.TPS_Grid.RowHeadersWidth = 52
         Me.TPS_Grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!)
         DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black
         DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White
@@ -524,15 +515,16 @@ Partial Class Main
         Me.IAP_Grid.AllowUserToResizeColumns = False
         Me.IAP_Grid.AllowUserToResizeRows = False
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.Black
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.NullValue = Nothing
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White
         Me.IAP_Grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
         Me.IAP_Grid.BackgroundColor = System.Drawing.Color.Black
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle7.BackColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!)
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!)
         DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black
         DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White
@@ -563,8 +555,10 @@ Partial Class Main
         DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.IAP_Grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
-        Me.IAP_Grid.RowHeadersWidth = 50
+        Me.IAP_Grid.RowHeadersWidth = 52
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle10.BackColor = System.Drawing.Color.Black
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!)
         DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Black
         DataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White
@@ -580,20 +574,26 @@ Partial Class Main
         '
         'Label11
         '
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(264, 9)
+        Me.Label11.BackColor = System.Drawing.Color.Black
+        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(269, 12)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(50, 27)
+        Me.Label11.Size = New System.Drawing.Size(71, 27)
         Me.Label11.TabIndex = 41
         Me.Label11.Text = "TPS"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label13
         '
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(1158, 9)
+        Me.Label13.BackColor = System.Drawing.Color.Black
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(1158, 12)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(50, 27)
+        Me.Label13.Size = New System.Drawing.Size(71, 27)
         Me.Label13.TabIndex = 42
         Me.Label13.Text = "IAP"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -615,7 +615,7 @@ Partial Class Main
         Me.cell_Revisit_Input.Name = "cell_Revisit_Input"
         Me.cell_Revisit_Input.Size = New System.Drawing.Size(60, 27)
         Me.cell_Revisit_Input.TabIndex = 44
-        Me.cell_Revisit_Input.Text = "25"
+        Me.cell_Revisit_Input.Text = "10"
         Me.cell_Revisit_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label14
@@ -625,7 +625,7 @@ Partial Class Main
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(137, 48)
         Me.Label14.TabIndex = 45
-        Me.Label14.Text = "Desired Cell Revisit:"
+        Me.Label14.Text = "Requred Cell Revisit to Save:"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label15
@@ -688,12 +688,41 @@ Partial Class Main
         Me.HighCLT_input.Text = "230"
         Me.HighCLT_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'status_Text
+        '
+        Me.status_Text.BackColor = System.Drawing.Color.Black
+        Me.status_Text.Enabled = False
+        Me.status_Text.ForeColor = System.Drawing.Color.White
+        Me.status_Text.Location = New System.Drawing.Point(3, 477)
+        Me.status_Text.MaximumSize = New System.Drawing.Size(260, 70)
+        Me.status_Text.MinimumSize = New System.Drawing.Size(260, 22)
+        Me.status_Text.Multiline = True
+        Me.status_Text.Name = "status_Text"
+        Me.status_Text.ReadOnly = True
+        Me.status_Text.Size = New System.Drawing.Size(260, 70)
+        Me.status_Text.TabIndex = 52
+        '
+        'Label18
+        '
+        Me.Label18.BackColor = System.Drawing.Color.Black
+        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(4, 452)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(88, 27)
+        Me.Label18.TabIndex = 53
+        Me.Label18.Text = "Status"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.status_Text)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.HighCLT_input)
         Me.Controls.Add(Me.Help_About_BTN)
@@ -710,7 +739,6 @@ Partial Class Main
         Me.Controls.Add(Me.IAT_text)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.save_dataLog)
-        Me.Controls.Add(Me.status_Text)
         Me.Controls.Add(Me.O2_text)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Gear_text)
@@ -781,7 +809,6 @@ Partial Class Main
     Friend WithEvents ECU_MAP_text As Label
     Friend WithEvents O2_text As Label
     Friend WithEvents Label24 As Label
-    Friend WithEvents status_Text As Label
     Friend WithEvents save_dataLog As Button
     Friend WithEvents IAT_text As Label
     Friend WithEvents Label12 As Label
@@ -798,4 +825,6 @@ Partial Class Main
     Friend WithEvents Help_About_BTN As Button
     Friend WithEvents Label17 As Label
     Friend WithEvents HighCLT_input As TextBox
+    Friend WithEvents status_Text As TextBox
+    Friend WithEvents Label18 As Label
 End Class

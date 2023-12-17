@@ -54,7 +54,7 @@ Public Class Main
     Dim z As Integer = 0            'alternates what user variable is read
     Dim current_View As Integer = 2      'Map View Selected 0 = Cell Count, 1 = Avg A/F, 2 = None
     Dim MapSwitch As Double = 11.2
-    Dim Cell_Revisit As Integer = 25
+    Dim Cell_Revisit As Integer = 10
     Dim IAP_array(21, 42, 3)    'X, Y, [Cell Count, A/F running Total, A/F Avg]
     Dim TPS_array(23, 42, 3)    'X, Y, [Cell Count, A/F running Total, A/F Avg]
     Dim HighCLT As Double = 230
@@ -252,7 +252,7 @@ Public Class Main
                 Logging_OnOff.Text = "Stop Logging"
                 loggingStatus = True
                 logStarted = TimeSpan.FromSeconds(pc.NextValue())
-                status_Text.Text = "data Logging Started."
+                status_Text.Text = "Data Logging Started."
                 save_dataLog.Visible = False
                 save_dataLog.Enabled = False
                 map_switch_input.Enabled = False
@@ -300,6 +300,7 @@ Public Class Main
                 outFile.WriteLine("END," & MapSwitch)
                 outFile.Close()
                 Console.WriteLine(My.Computer.FileSystem.ReadAllText(csvFilePath))
+                status_Text.Text = "Log Saved: " & vbCrLf & csvFilePath
             End If
         Else
             Dim openFileDialog1 As New OpenFileDialog()
@@ -344,6 +345,7 @@ Public Class Main
                 save_dataLog.Visible = False
                 save_dataLog.Enabled = False
                 save_dataLog.Text = "Save Logged Data"
+                status_Text.Text = "ECU Bin File Loaded: " & vbCrLf & csvFilePath
 
             End If
 
@@ -750,7 +752,7 @@ Public Class Main
         'Initialize TPS Grid
         For i = 0 To 22
             TPS_Grid.Columns.Item(i).HeaderText = TPS_Header(i).ToString()
-            TPS_Grid.Columns.Item(i).Width = 25
+            TPS_Grid.Columns.Item(i).Width = 26
             'TPS_Grid.Columns(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
         Next
         For i = 0 To 41
@@ -768,7 +770,7 @@ Public Class Main
         'Initialize IAP Grid
         For i = 0 To 20
             IAP_Grid.Columns.Item(i).HeaderText = IAP_Header(i).ToString()
-            IAP_Grid.Columns.Item(i).Width = 25
+            IAP_Grid.Columns.Item(i).Width = 26
             'IAP_Grid.Columns(i).DefaultCellStyle.Font = New Font("Tahoma", 4)
         Next
         For i = 0 To 41
