@@ -61,6 +61,7 @@ Public Class Main
     Dim wait_time As Integer = 1500
     Dim timer_interval As Integer = 150
     Dim twothirds As Integer
+    Dim loggedDataExists As Integer = 0 'Tracks is there is logged data and if it has been saved - 0 no logged data, 1 logged data not saved, 2 logged data saved
 
     'data Validation parameters - implement these in the DataValidation function
     Dim minRPM As Integer = 500
@@ -116,18 +117,25 @@ Public Class Main
     End Sub
 
     Private Sub Main_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        If loggedDataExists = 1 Then
+            If MessageBox.Show("There is unsaved logged data, are you sure you want to close?", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            Else
+                e.Cancel = True
+            End If
+        End If
+
         If EngPort.IsOpen() Then
             Try
                 EngPort.Close()
             Catch ex As Exception
-                MsgBox("Closing, Issue closing Engine Comm Port.")
+                MsgBox("Closing, Issue closing Engine Comm Port. " & ex.Message)
             End Try
         End If
         If O2Port.IsOpen() Then
             Try
                 O2Port.Close()
             Catch ex As Exception
-                MsgBox("Closing, Issue closing O2 Comm Port.")
+                MsgBox("Closing, Issue closing O2 Comm Port. " & ex.Message)
             End Try
         End If
     End Sub
@@ -243,6 +251,7 @@ Public Class Main
             map_switch_input.Enabled = True
             cell_Revisit_Input.Enabled = True
             save_dataLog.Text = "Save Logged Data"
+            loggedDataExists = 1    'Logged data that isn't saved
         Else
             'Start Logging check that data valid
             logStarted = TimeSpan.FromSeconds(pc.NextValue())
@@ -301,6 +310,7 @@ Public Class Main
                 outFile.Close()
                 Console.WriteLine(My.Computer.FileSystem.ReadAllText(csvFilePath))
                 status_Text.Text = "Log Saved: " & vbCrLf & csvFilePath
+                loggedDataExists = 2 'logged data is saved
             End If
         Else
             Dim openFileDialog1 As New OpenFileDialog()
@@ -678,7 +688,7 @@ Public Class Main
                 O2Port.Close()
             Catch ex As Exception
                 o2Only = False
-                MsgBox("O2 Comm Port Failed.  Check connection or selected Port.")
+                MsgBox("O2 Comm Port Failed.  Check connection or selected Port. " & ex.Message)
             End Try
         ElseIf engOnly Then
             Try
@@ -687,7 +697,7 @@ Public Class Main
                 EngPort.Close()
             Catch ex As Exception
                 engOnly = False
-                MsgBox("Engine Comm Port Failed.  Check connection or selected Port.")
+                MsgBox("Engine Comm Port Failed.  Check connection or selected Port. " & ex.Message)
             End Try
         Else
             Try
