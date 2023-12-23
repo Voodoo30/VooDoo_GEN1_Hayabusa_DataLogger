@@ -109,9 +109,10 @@ Partial Class Main
         'Data_OnOff
         '
         Me.Data_OnOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Data_OnOff.Location = New System.Drawing.Point(16, 12)
+        Me.Data_OnOff.Location = New System.Drawing.Point(12, 10)
+        Me.Data_OnOff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Data_OnOff.Name = "Data_OnOff"
-        Me.Data_OnOff.Size = New System.Drawing.Size(103, 31)
+        Me.Data_OnOff.Size = New System.Drawing.Size(121, 25)
         Me.Data_OnOff.TabIndex = 0
         Me.Data_OnOff.Text = "Data On"
         Me.Data_OnOff.UseVisualStyleBackColor = True
@@ -124,35 +125,39 @@ Partial Class Main
         '
         Me.EngPortSel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EngPortSel.FormattingEnabled = True
-        Me.EngPortSel.Location = New System.Drawing.Point(16, 49)
+        Me.EngPortSel.Location = New System.Drawing.Point(12, 40)
+        Me.EngPortSel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.EngPortSel.Name = "EngPortSel"
-        Me.EngPortSel.Size = New System.Drawing.Size(103, 24)
+        Me.EngPortSel.Size = New System.Drawing.Size(78, 21)
         Me.EngPortSel.TabIndex = 1
         '
         'o2PortSel
         '
         Me.o2PortSel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.o2PortSel.FormattingEnabled = True
-        Me.o2PortSel.Location = New System.Drawing.Point(16, 79)
+        Me.o2PortSel.Location = New System.Drawing.Point(12, 64)
+        Me.o2PortSel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.o2PortSel.Name = "o2PortSel"
-        Me.o2PortSel.Size = New System.Drawing.Size(103, 24)
+        Me.o2PortSel.Size = New System.Drawing.Size(78, 21)
         Me.o2PortSel.TabIndex = 2
         '
         'label_engPort
         '
         Me.label_engPort.AutoSize = True
-        Me.label_engPort.Location = New System.Drawing.Point(125, 52)
+        Me.label_engPort.Location = New System.Drawing.Point(94, 42)
+        Me.label_engPort.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label_engPort.Name = "label_engPort"
-        Me.label_engPort.Size = New System.Drawing.Size(118, 16)
+        Me.label_engPort.Size = New System.Drawing.Size(111, 15)
         Me.label_engPort.TabIndex = 3
         Me.label_engPort.Text = "Engine Comm Port"
         '
         'label_o2Port
         '
         Me.label_o2Port.AutoSize = True
-        Me.label_o2Port.Location = New System.Drawing.Point(125, 82)
+        Me.label_o2Port.Location = New System.Drawing.Point(94, 67)
+        Me.label_o2Port.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label_o2Port.Name = "label_o2Port"
-        Me.label_o2Port.Size = New System.Drawing.Size(93, 16)
+        Me.label_o2Port.Size = New System.Drawing.Size(88, 15)
         Me.label_o2Port.TabIndex = 4
         Me.label_o2Port.Text = "O2 Comm Port"
         '
@@ -161,10 +166,11 @@ Partial Class Main
         Me.Logging_OnOff.AutoSize = True
         Me.Logging_OnOff.Enabled = False
         Me.Logging_OnOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Logging_OnOff.Location = New System.Drawing.Point(7, 553)
-        Me.Logging_OnOff.MinimumSize = New System.Drawing.Size(103, 32)
+        Me.Logging_OnOff.Location = New System.Drawing.Point(5, 449)
+        Me.Logging_OnOff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Logging_OnOff.MinimumSize = New System.Drawing.Size(77, 26)
         Me.Logging_OnOff.Name = "Logging_OnOff"
-        Me.Logging_OnOff.Size = New System.Drawing.Size(119, 32)
+        Me.Logging_OnOff.Size = New System.Drawing.Size(105, 28)
         Me.Logging_OnOff.TabIndex = 5
         Me.Logging_OnOff.Text = "Start Logging"
         Me.Logging_OnOff.UseVisualStyleBackColor = True
@@ -172,9 +178,10 @@ Partial Class Main
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(16, 153)
+        Me.Label1.Location = New System.Drawing.Point(12, 124)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 25)
+        Me.Label1.Size = New System.Drawing.Size(72, 20)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "ECU MAP"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -182,9 +189,10 @@ Partial Class Main
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 178)
+        Me.Label2.Location = New System.Drawing.Point(28, 145)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 25)
+        Me.Label2.Size = New System.Drawing.Size(56, 20)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "RPM"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -192,9 +200,10 @@ Partial Class Main
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(37, 128)
+        Me.Label3.Location = New System.Drawing.Point(28, 104)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 25)
+        Me.Label3.Size = New System.Drawing.Size(56, 20)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "CLT °F"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -202,9 +211,10 @@ Partial Class Main
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(37, 203)
+        Me.Label4.Location = New System.Drawing.Point(28, 165)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 25)
+        Me.Label4.Size = New System.Drawing.Size(56, 20)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "TPS %"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -212,9 +222,10 @@ Partial Class Main
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(37, 228)
+        Me.Label5.Location = New System.Drawing.Point(28, 185)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(75, 25)
+        Me.Label5.Size = New System.Drawing.Size(56, 20)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "▲IAP"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -222,9 +233,10 @@ Partial Class Main
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(37, 278)
+        Me.Label6.Location = New System.Drawing.Point(28, 226)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(75, 25)
+        Me.Label6.Size = New System.Drawing.Size(56, 20)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Fuel PW"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -232,9 +244,10 @@ Partial Class Main
         'Label7
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(37, 253)
+        Me.Label7.Location = New System.Drawing.Point(28, 206)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(75, 25)
+        Me.Label7.Size = New System.Drawing.Size(56, 20)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "°IGN"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -242,9 +255,10 @@ Partial Class Main
         'Label8
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(37, 328)
+        Me.Label8.Location = New System.Drawing.Point(28, 266)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(75, 25)
+        Me.Label8.Size = New System.Drawing.Size(56, 20)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Amb Press"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -252,9 +266,10 @@ Partial Class Main
         'Label9
         '
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(37, 303)
+        Me.Label9.Location = New System.Drawing.Point(28, 246)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 25)
+        Me.Label9.Size = New System.Drawing.Size(56, 20)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "MAP"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -262,9 +277,10 @@ Partial Class Main
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(37, 353)
+        Me.Label10.Location = New System.Drawing.Point(28, 287)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(75, 25)
+        Me.Label10.Size = New System.Drawing.Size(56, 20)
         Me.Label10.TabIndex = 15
         Me.Label10.Text = "Gear"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -274,10 +290,11 @@ Partial Class Main
         Me.Gear_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Gear_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Gear_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Gear_text.Location = New System.Drawing.Point(118, 355)
-        Me.Gear_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.Gear_text.Location = New System.Drawing.Point(88, 288)
+        Me.Gear_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Gear_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.Gear_text.Name = "Gear_text"
-        Me.Gear_text.Size = New System.Drawing.Size(60, 25)
+        Me.Gear_text.Size = New System.Drawing.Size(45, 20)
         Me.Gear_text.TabIndex = 26
         Me.Gear_text.Text = "NULL"
         '
@@ -286,10 +303,11 @@ Partial Class Main
         Me.MAP_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.MAP_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MAP_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.MAP_text.Location = New System.Drawing.Point(118, 305)
-        Me.MAP_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.MAP_text.Location = New System.Drawing.Point(88, 248)
+        Me.MAP_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.MAP_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.MAP_text.Name = "MAP_text"
-        Me.MAP_text.Size = New System.Drawing.Size(60, 25)
+        Me.MAP_text.Size = New System.Drawing.Size(45, 20)
         Me.MAP_text.TabIndex = 25
         Me.MAP_text.Text = "NULL"
         '
@@ -298,10 +316,11 @@ Partial Class Main
         Me.AmbPress_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.AmbPress_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AmbPress_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.AmbPress_text.Location = New System.Drawing.Point(118, 330)
-        Me.AmbPress_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.AmbPress_text.Location = New System.Drawing.Point(88, 268)
+        Me.AmbPress_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.AmbPress_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.AmbPress_text.Name = "AmbPress_text"
-        Me.AmbPress_text.Size = New System.Drawing.Size(60, 25)
+        Me.AmbPress_text.Size = New System.Drawing.Size(45, 20)
         Me.AmbPress_text.TabIndex = 24
         Me.AmbPress_text.Text = "NULL"
         '
@@ -310,10 +329,11 @@ Partial Class Main
         Me.IGN_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.IGN_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IGN_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.IGN_text.Location = New System.Drawing.Point(118, 255)
-        Me.IGN_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.IGN_text.Location = New System.Drawing.Point(88, 207)
+        Me.IGN_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.IGN_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.IGN_text.Name = "IGN_text"
-        Me.IGN_text.Size = New System.Drawing.Size(60, 25)
+        Me.IGN_text.Size = New System.Drawing.Size(45, 20)
         Me.IGN_text.TabIndex = 23
         Me.IGN_text.Text = "NULL"
         '
@@ -322,10 +342,11 @@ Partial Class Main
         Me.Fuel_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Fuel_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Fuel_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Fuel_text.Location = New System.Drawing.Point(118, 280)
-        Me.Fuel_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.Fuel_text.Location = New System.Drawing.Point(88, 228)
+        Me.Fuel_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Fuel_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.Fuel_text.Name = "Fuel_text"
-        Me.Fuel_text.Size = New System.Drawing.Size(60, 25)
+        Me.Fuel_text.Size = New System.Drawing.Size(45, 20)
         Me.Fuel_text.TabIndex = 22
         Me.Fuel_text.Text = "NULL"
         '
@@ -334,10 +355,11 @@ Partial Class Main
         Me.deltaIAP_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.deltaIAP_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.deltaIAP_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.deltaIAP_text.Location = New System.Drawing.Point(118, 230)
-        Me.deltaIAP_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.deltaIAP_text.Location = New System.Drawing.Point(88, 187)
+        Me.deltaIAP_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.deltaIAP_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.deltaIAP_text.Name = "deltaIAP_text"
-        Me.deltaIAP_text.Size = New System.Drawing.Size(60, 25)
+        Me.deltaIAP_text.Size = New System.Drawing.Size(45, 20)
         Me.deltaIAP_text.TabIndex = 21
         Me.deltaIAP_text.Text = "NULL"
         '
@@ -346,10 +368,11 @@ Partial Class Main
         Me.TPS_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.TPS_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TPS_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TPS_text.Location = New System.Drawing.Point(118, 205)
-        Me.TPS_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.TPS_text.Location = New System.Drawing.Point(88, 167)
+        Me.TPS_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.TPS_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.TPS_text.Name = "TPS_text"
-        Me.TPS_text.Size = New System.Drawing.Size(60, 25)
+        Me.TPS_text.Size = New System.Drawing.Size(45, 20)
         Me.TPS_text.TabIndex = 20
         Me.TPS_text.Text = "NULL"
         '
@@ -358,10 +381,11 @@ Partial Class Main
         Me.CLT_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.CLT_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CLT_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.CLT_text.Location = New System.Drawing.Point(118, 130)
-        Me.CLT_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.CLT_text.Location = New System.Drawing.Point(88, 106)
+        Me.CLT_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.CLT_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.CLT_text.Name = "CLT_text"
-        Me.CLT_text.Size = New System.Drawing.Size(60, 25)
+        Me.CLT_text.Size = New System.Drawing.Size(45, 20)
         Me.CLT_text.TabIndex = 19
         Me.CLT_text.Text = "NULL"
         '
@@ -370,10 +394,11 @@ Partial Class Main
         Me.RPM_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.RPM_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RPM_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.RPM_text.Location = New System.Drawing.Point(118, 180)
-        Me.RPM_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.RPM_text.Location = New System.Drawing.Point(88, 146)
+        Me.RPM_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.RPM_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.RPM_text.Name = "RPM_text"
-        Me.RPM_text.Size = New System.Drawing.Size(60, 25)
+        Me.RPM_text.Size = New System.Drawing.Size(45, 20)
         Me.RPM_text.TabIndex = 18
         Me.RPM_text.Text = "NULL"
         '
@@ -382,10 +407,11 @@ Partial Class Main
         Me.ECU_MAP_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ECU_MAP_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ECU_MAP_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ECU_MAP_text.Location = New System.Drawing.Point(118, 155)
-        Me.ECU_MAP_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.ECU_MAP_text.Location = New System.Drawing.Point(88, 126)
+        Me.ECU_MAP_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.ECU_MAP_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.ECU_MAP_text.Name = "ECU_MAP_text"
-        Me.ECU_MAP_text.Size = New System.Drawing.Size(60, 25)
+        Me.ECU_MAP_text.Size = New System.Drawing.Size(45, 20)
         Me.ECU_MAP_text.TabIndex = 17
         Me.ECU_MAP_text.Text = "NULL"
         '
@@ -394,19 +420,21 @@ Partial Class Main
         Me.O2_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.O2_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.O2_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.O2_text.Location = New System.Drawing.Point(118, 405)
-        Me.O2_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.O2_text.Location = New System.Drawing.Point(88, 329)
+        Me.O2_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.O2_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.O2_text.Name = "O2_text"
-        Me.O2_text.Size = New System.Drawing.Size(60, 25)
+        Me.O2_text.Size = New System.Drawing.Size(45, 20)
         Me.O2_text.TabIndex = 34
         Me.O2_text.Text = "NULL"
         '
         'Label24
         '
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(37, 400)
+        Me.Label24.Location = New System.Drawing.Point(28, 325)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(75, 31)
+        Me.Label24.Size = New System.Drawing.Size(56, 25)
         Me.Label24.TabIndex = 33
         Me.Label24.Text = "O2 A/F"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -415,10 +443,11 @@ Partial Class Main
         '
         Me.save_dataLog.AutoSize = True
         Me.save_dataLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.save_dataLog.Location = New System.Drawing.Point(7, 591)
-        Me.save_dataLog.MinimumSize = New System.Drawing.Size(103, 32)
+        Me.save_dataLog.Location = New System.Drawing.Point(5, 480)
+        Me.save_dataLog.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.save_dataLog.MinimumSize = New System.Drawing.Size(77, 26)
         Me.save_dataLog.Name = "save_dataLog"
-        Me.save_dataLog.Size = New System.Drawing.Size(157, 32)
+        Me.save_dataLog.Size = New System.Drawing.Size(139, 28)
         Me.save_dataLog.TabIndex = 36
         Me.save_dataLog.Text = "Load Logged Data"
         Me.save_dataLog.UseVisualStyleBackColor = True
@@ -428,19 +457,21 @@ Partial Class Main
         Me.IAT_text.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.IAT_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IAT_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.IAT_text.Location = New System.Drawing.Point(118, 380)
-        Me.IAT_text.MinimumSize = New System.Drawing.Size(50, 20)
+        Me.IAT_text.Location = New System.Drawing.Point(88, 309)
+        Me.IAT_text.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.IAT_text.MinimumSize = New System.Drawing.Size(38, 16)
         Me.IAT_text.Name = "IAT_text"
-        Me.IAT_text.Size = New System.Drawing.Size(60, 25)
+        Me.IAT_text.Size = New System.Drawing.Size(45, 20)
         Me.IAT_text.TabIndex = 38
         Me.IAT_text.Text = "NULL"
         '
         'Label12
         '
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(37, 378)
+        Me.Label12.Location = New System.Drawing.Point(28, 307)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(75, 25)
+        Me.Label12.Size = New System.Drawing.Size(56, 20)
         Me.Label12.TabIndex = 37
         Me.Label12.Text = "IAT"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -479,7 +510,8 @@ Partial Class Main
         Me.TPS_Grid.DefaultCellStyle = DataGridViewCellStyle3
         Me.TPS_Grid.Enabled = False
         Me.TPS_Grid.GridColor = System.Drawing.Color.White
-        Me.TPS_Grid.Location = New System.Drawing.Point(269, 12)
+        Me.TPS_Grid.Location = New System.Drawing.Point(250, 10)
+        Me.TPS_Grid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TPS_Grid.MultiSelect = False
         Me.TPS_Grid.Name = "TPS_Grid"
         Me.TPS_Grid.ReadOnly = True
@@ -505,7 +537,7 @@ Partial Class Main
         Me.TPS_Grid.ShowCellToolTips = False
         Me.TPS_Grid.ShowEditingIcon = False
         Me.TPS_Grid.ShowRowErrors = False
-        Me.TPS_Grid.Size = New System.Drawing.Size(883, 1008)
+        Me.TPS_Grid.Size = New System.Drawing.Size(662, 819)
         Me.TPS_Grid.TabIndex = 39
         Me.TPS_Grid.TabStop = False
         '
@@ -544,7 +576,8 @@ Partial Class Main
         Me.IAP_Grid.Enabled = False
         Me.IAP_Grid.GridColor = System.Drawing.Color.White
         Me.IAP_Grid.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.IAP_Grid.Location = New System.Drawing.Point(1158, 12)
+        Me.IAP_Grid.Location = New System.Drawing.Point(913, 10)
+        Me.IAP_Grid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.IAP_Grid.MultiSelect = False
         Me.IAP_Grid.Name = "IAP_Grid"
         Me.IAP_Grid.ReadOnly = True
@@ -569,7 +602,7 @@ Partial Class Main
         Me.IAP_Grid.ShowCellToolTips = False
         Me.IAP_Grid.ShowEditingIcon = False
         Me.IAP_Grid.ShowRowErrors = False
-        Me.IAP_Grid.Size = New System.Drawing.Size(810, 1008)
+        Me.IAP_Grid.Size = New System.Drawing.Size(608, 819)
         Me.IAP_Grid.TabIndex = 40
         Me.IAP_Grid.TabStop = False
         '
@@ -579,9 +612,10 @@ Partial Class Main
         Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(269, 12)
+        Me.Label11.Location = New System.Drawing.Point(250, 10)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(71, 27)
+        Me.Label11.Size = New System.Drawing.Size(53, 22)
         Me.Label11.TabIndex = 41
         Me.Label11.Text = "TPS"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -592,9 +626,10 @@ Partial Class Main
         Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(1158, 12)
+        Me.Label13.Location = New System.Drawing.Point(913, 10)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(71, 27)
+        Me.Label13.Size = New System.Drawing.Size(53, 22)
         Me.Label13.TabIndex = 42
         Me.Label13.Text = "IAP"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -602,9 +637,10 @@ Partial Class Main
         'MAP_display_toggle
         '
         Me.MAP_display_toggle.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MAP_display_toggle.Location = New System.Drawing.Point(132, 761)
+        Me.MAP_display_toggle.Location = New System.Drawing.Point(123, 618)
+        Me.MAP_display_toggle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MAP_display_toggle.Name = "MAP_display_toggle"
-        Me.MAP_display_toggle.Size = New System.Drawing.Size(131, 34)
+        Me.MAP_display_toggle.Size = New System.Drawing.Size(123, 28)
         Me.MAP_display_toggle.TabIndex = 43
         Me.MAP_display_toggle.Text = "None"
         Me.MAP_display_toggle.UseVisualStyleBackColor = True
@@ -612,39 +648,43 @@ Partial Class Main
         'cell_Revisit_Input
         '
         Me.cell_Revisit_Input.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cell_Revisit_Input.Location = New System.Drawing.Point(165, 708)
+        Me.cell_Revisit_Input.Location = New System.Drawing.Point(152, 575)
+        Me.cell_Revisit_Input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cell_Revisit_Input.Name = "cell_Revisit_Input"
-        Me.cell_Revisit_Input.Size = New System.Drawing.Size(60, 27)
+        Me.cell_Revisit_Input.Size = New System.Drawing.Size(46, 27)
         Me.cell_Revisit_Input.TabIndex = 44
         Me.cell_Revisit_Input.Text = "10"
         Me.cell_Revisit_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label14
         '
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(3, 697)
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(6, 558)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(137, 48)
+        Me.Label14.Size = New System.Drawing.Size(113, 63)
         Me.Label14.TabIndex = 45
         Me.Label14.Text = "Requred Cell Revisit to Save:"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label15
         '
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(3, 758)
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(8, 617)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(137, 41)
+        Me.Label15.Size = New System.Drawing.Size(103, 33)
         Me.Label15.TabIndex = 46
         Me.Label15.Text = "MAP Display Toggle"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label16
         '
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(3, 648)
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(2, 529)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(156, 49)
+        Me.Label16.Size = New System.Drawing.Size(117, 40)
         Me.Label16.TabIndex = 48
         Me.Label16.Text = "IAP/TPS Switching Point (%)"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -652,9 +692,10 @@ Partial Class Main
         'map_switch_input
         '
         Me.map_switch_input.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.map_switch_input.Location = New System.Drawing.Point(165, 659)
+        Me.map_switch_input.Location = New System.Drawing.Point(152, 535)
+        Me.map_switch_input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.map_switch_input.Name = "map_switch_input"
-        Me.map_switch_input.Size = New System.Drawing.Size(60, 27)
+        Me.map_switch_input.Size = New System.Drawing.Size(46, 27)
         Me.map_switch_input.TabIndex = 47
         Me.map_switch_input.Text = "11.2"
         Me.map_switch_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -662,19 +703,21 @@ Partial Class Main
         'Help_About_BTN
         '
         Me.Help_About_BTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Help_About_BTN.Location = New System.Drawing.Point(4, 982)
+        Me.Help_About_BTN.Location = New System.Drawing.Point(9, 767)
+        Me.Help_About_BTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Help_About_BTN.Name = "Help_About_BTN"
-        Me.Help_About_BTN.Size = New System.Drawing.Size(146, 38)
+        Me.Help_About_BTN.Size = New System.Drawing.Size(110, 31)
         Me.Help_About_BTN.TabIndex = 49
         Me.Help_About_BTN.Text = "Help / About"
         Me.Help_About_BTN.UseVisualStyleBackColor = True
         '
         'Label17
         '
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(3, 813)
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(2, 652)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(156, 48)
+        Me.Label17.Size = New System.Drawing.Size(117, 62)
         Me.Label17.TabIndex = 51
         Me.Label17.Text = "High Coolant Temp Warning (°F):"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -682,9 +725,10 @@ Partial Class Main
         'HighCLT_input
         '
         Me.HighCLT_input.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HighCLT_input.Location = New System.Drawing.Point(165, 824)
+        Me.HighCLT_input.Location = New System.Drawing.Point(152, 669)
+        Me.HighCLT_input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HighCLT_input.Name = "HighCLT_input"
-        Me.HighCLT_input.Size = New System.Drawing.Size(60, 27)
+        Me.HighCLT_input.Size = New System.Drawing.Size(46, 27)
         Me.HighCLT_input.TabIndex = 50
         Me.HighCLT_input.Text = "230"
         Me.HighCLT_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -694,13 +738,14 @@ Partial Class Main
         Me.status_Text.BackColor = System.Drawing.Color.Black
         Me.status_Text.Enabled = False
         Me.status_Text.ForeColor = System.Drawing.Color.White
-        Me.status_Text.Location = New System.Drawing.Point(3, 477)
-        Me.status_Text.MaximumSize = New System.Drawing.Size(260, 70)
-        Me.status_Text.MinimumSize = New System.Drawing.Size(260, 22)
+        Me.status_Text.Location = New System.Drawing.Point(2, 388)
+        Me.status_Text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.status_Text.MaximumSize = New System.Drawing.Size(196, 58)
+        Me.status_Text.MinimumSize = New System.Drawing.Size(196, 19)
         Me.status_Text.Multiline = True
         Me.status_Text.Name = "status_Text"
         Me.status_Text.ReadOnly = True
-        Me.status_Text.Size = New System.Drawing.Size(260, 70)
+        Me.status_Text.Size = New System.Drawing.Size(196, 58)
         Me.status_Text.TabIndex = 52
         '
         'Label18
@@ -709,9 +754,10 @@ Partial Class Main
         Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(4, 452)
+        Me.Label18.Location = New System.Drawing.Point(3, 367)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(88, 27)
+        Me.Label18.Size = New System.Drawing.Size(66, 22)
         Me.Label18.TabIndex = 53
         Me.Label18.Text = "Status"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -719,9 +765,10 @@ Partial Class Main
         'calTPSbutton
         '
         Me.calTPSbutton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.calTPSbutton.Location = New System.Drawing.Point(156, 957)
+        Me.calTPSbutton.Location = New System.Drawing.Point(9, 725)
+        Me.calTPSbutton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.calTPSbutton.Name = "calTPSbutton"
-        Me.calTPSbutton.Size = New System.Drawing.Size(107, 63)
+        Me.calTPSbutton.Size = New System.Drawing.Size(188, 38)
         Me.calTPSbutton.TabIndex = 54
         Me.calTPSbutton.Text = "Calibrate TPS"
         Me.calTPSbutton.UseVisualStyleBackColor = True
@@ -729,10 +776,10 @@ Partial Class Main
         '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.ClientSize = New System.Drawing.Size(1590, 857)
         Me.Controls.Add(Me.calTPSbutton)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.status_Text)
@@ -780,8 +827,8 @@ Partial Class Main
         Me.Controls.Add(Me.o2PortSel)
         Me.Controls.Add(Me.EngPortSel)
         Me.Controls.Add(Me.Data_OnOff)
-        Me.Enabled = False
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Main"
         Me.Text = "VooDoo_Gen1_DataLogger"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
