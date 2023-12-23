@@ -29,9 +29,10 @@ Partial Class Help_Info
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(987, 477)
+        Me.Button1.Location = New System.Drawing.Point(739, 434)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 37)
+        Me.Button1.Size = New System.Drawing.Size(68, 30)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "OK"
         Me.Button1.UseVisualStyleBackColor = True
@@ -39,23 +40,25 @@ Partial Class Help_Info
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(7, 9)
-        Me.TextBox1.MinimumSize = New System.Drawing.Size(781, 100)
+        Me.TextBox1.Location = New System.Drawing.Point(5, 7)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.MinimumSize = New System.Drawing.Size(587, 82)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(1071, 462)
+        Me.TextBox1.Size = New System.Drawing.Size(804, 423)
         Me.TextBox1.TabIndex = 1
         Me.TextBox1.TabStop = False
         Me.TextBox1.Text = resources.GetString("TextBox1.Text")
         '
         'Help_Info
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1090, 526)
+        Me.ClientSize = New System.Drawing.Size(818, 475)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Help_Info"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
