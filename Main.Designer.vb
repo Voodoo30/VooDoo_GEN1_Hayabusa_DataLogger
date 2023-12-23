@@ -83,6 +83,7 @@ Partial Class Main
         Me.HighCLT_input = New System.Windows.Forms.TextBox()
         Me.status_Text = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
+        Me.calTPSbutton = New System.Windows.Forms.Button()
         CType(Me.TPS_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IAP_Grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -661,7 +662,7 @@ Partial Class Main
         'Help_About_BTN
         '
         Me.Help_About_BTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Help_About_BTN.Location = New System.Drawing.Point(7, 935)
+        Me.Help_About_BTN.Location = New System.Drawing.Point(4, 982)
         Me.Help_About_BTN.Name = "Help_About_BTN"
         Me.Help_About_BTN.Size = New System.Drawing.Size(146, 38)
         Me.Help_About_BTN.TabIndex = 49
@@ -715,12 +716,24 @@ Partial Class Main
         Me.Label18.Text = "Status"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'calTPSbutton
+        '
+        Me.calTPSbutton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.calTPSbutton.Location = New System.Drawing.Point(156, 957)
+        Me.calTPSbutton.Name = "calTPSbutton"
+        Me.calTPSbutton.Size = New System.Drawing.Size(107, 63)
+        Me.calTPSbutton.TabIndex = 54
+        Me.calTPSbutton.Text = "Calibrate TPS"
+        Me.calTPSbutton.UseVisualStyleBackColor = True
+        Me.calTPSbutton.Visible = False
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.Controls.Add(Me.calTPSbutton)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.status_Text)
         Me.Controls.Add(Me.Label17)
@@ -767,6 +780,7 @@ Partial Class Main
         Me.Controls.Add(Me.o2PortSel)
         Me.Controls.Add(Me.EngPortSel)
         Me.Controls.Add(Me.Data_OnOff)
+        Me.Enabled = False
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Main"
         Me.Text = "VooDoo_Gen1_DataLogger"
@@ -827,4 +841,5 @@ Partial Class Main
     Friend WithEvents HighCLT_input As TextBox
     Friend WithEvents status_Text As TextBox
     Friend WithEvents Label18 As Label
+    Friend WithEvents calTPSbutton As Button
 End Class

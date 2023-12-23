@@ -71,7 +71,6 @@ Public Class Main
 
 #Region "Form Loading"
     Private Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
         'Dim searcher As New ManagementObjectSearcher("root\WMI", "SELECT * FROM MSSerial_PortName WHERE InstanceName LIKE 'FTDI%'")
         Dim ports As String() = SerialPort.GetPortNames()
         Dim port As String
@@ -243,6 +242,7 @@ Public Class Main
             save_dataLog.Enabled = True
             map_switch_input.Enabled = True
             cell_Revisit_Input.Enabled = True
+            save_dataLog.Text = "Save Logged Data"
         Else
             'Start Logging check that data valid
             logStarted = TimeSpan.FromSeconds(pc.NextValue())
@@ -341,14 +341,9 @@ Public Class Main
 
                 End While
                 dataLog_cell = i - 1 'number of data rows read into dataLog
-
-                save_dataLog.Visible = False
-                save_dataLog.Enabled = False
-                save_dataLog.Text = "Save Logged Data"
                 status_Text.Text = "ECU Bin File Loaded: " & vbCrLf & csvFilePath
 
             End If
-
 
         End If
     End Sub
@@ -550,7 +545,8 @@ Public Class Main
         If (b(1) = l) And (b(l - 1) = (256 - c)) Then
 
             RPM = Int(b(2)) * 100
-            TPS = Int(((b(3) - 55) / (256 - 55)) * 100)
+            TPS = Int(((b(3) - 55) / (256 - 55)) * 125)
+            If TPS > 100 Then TPS = 100
             IP = b(4)
             AP = b(5)
             CLT = b(6)
