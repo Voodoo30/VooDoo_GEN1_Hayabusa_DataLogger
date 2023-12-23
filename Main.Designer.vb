@@ -110,7 +110,7 @@ Partial Class Main
         '
         Me.Data_OnOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Data_OnOff.Location = New System.Drawing.Point(12, 10)
-        Me.Data_OnOff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Data_OnOff.Margin = New System.Windows.Forms.Padding(2)
         Me.Data_OnOff.Name = "Data_OnOff"
         Me.Data_OnOff.Size = New System.Drawing.Size(121, 25)
         Me.Data_OnOff.TabIndex = 0
@@ -126,7 +126,7 @@ Partial Class Main
         Me.EngPortSel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.EngPortSel.FormattingEnabled = True
         Me.EngPortSel.Location = New System.Drawing.Point(12, 40)
-        Me.EngPortSel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.EngPortSel.Margin = New System.Windows.Forms.Padding(2)
         Me.EngPortSel.Name = "EngPortSel"
         Me.EngPortSel.Size = New System.Drawing.Size(78, 21)
         Me.EngPortSel.TabIndex = 1
@@ -136,7 +136,7 @@ Partial Class Main
         Me.o2PortSel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.o2PortSel.FormattingEnabled = True
         Me.o2PortSel.Location = New System.Drawing.Point(12, 64)
-        Me.o2PortSel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.o2PortSel.Margin = New System.Windows.Forms.Padding(2)
         Me.o2PortSel.Name = "o2PortSel"
         Me.o2PortSel.Size = New System.Drawing.Size(78, 21)
         Me.o2PortSel.TabIndex = 2
@@ -147,7 +147,7 @@ Partial Class Main
         Me.label_engPort.Location = New System.Drawing.Point(94, 42)
         Me.label_engPort.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label_engPort.Name = "label_engPort"
-        Me.label_engPort.Size = New System.Drawing.Size(111, 15)
+        Me.label_engPort.Size = New System.Drawing.Size(94, 13)
         Me.label_engPort.TabIndex = 3
         Me.label_engPort.Text = "Engine Comm Port"
         '
@@ -157,7 +157,7 @@ Partial Class Main
         Me.label_o2Port.Location = New System.Drawing.Point(94, 67)
         Me.label_o2Port.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.label_o2Port.Name = "label_o2Port"
-        Me.label_o2Port.Size = New System.Drawing.Size(88, 15)
+        Me.label_o2Port.Size = New System.Drawing.Size(75, 13)
         Me.label_o2Port.TabIndex = 4
         Me.label_o2Port.Text = "O2 Comm Port"
         '
@@ -167,7 +167,7 @@ Partial Class Main
         Me.Logging_OnOff.Enabled = False
         Me.Logging_OnOff.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Logging_OnOff.Location = New System.Drawing.Point(5, 449)
-        Me.Logging_OnOff.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Logging_OnOff.Margin = New System.Windows.Forms.Padding(2)
         Me.Logging_OnOff.MinimumSize = New System.Drawing.Size(77, 26)
         Me.Logging_OnOff.Name = "Logging_OnOff"
         Me.Logging_OnOff.Size = New System.Drawing.Size(105, 28)
@@ -444,7 +444,7 @@ Partial Class Main
         Me.save_dataLog.AutoSize = True
         Me.save_dataLog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.save_dataLog.Location = New System.Drawing.Point(5, 480)
-        Me.save_dataLog.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.save_dataLog.Margin = New System.Windows.Forms.Padding(2)
         Me.save_dataLog.MinimumSize = New System.Drawing.Size(77, 26)
         Me.save_dataLog.Name = "save_dataLog"
         Me.save_dataLog.Size = New System.Drawing.Size(139, 28)
@@ -511,7 +511,7 @@ Partial Class Main
         Me.TPS_Grid.Enabled = False
         Me.TPS_Grid.GridColor = System.Drawing.Color.White
         Me.TPS_Grid.Location = New System.Drawing.Point(250, 10)
-        Me.TPS_Grid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TPS_Grid.Margin = New System.Windows.Forms.Padding(2)
         Me.TPS_Grid.MultiSelect = False
         Me.TPS_Grid.Name = "TPS_Grid"
         Me.TPS_Grid.ReadOnly = True
@@ -577,7 +577,7 @@ Partial Class Main
         Me.IAP_Grid.GridColor = System.Drawing.Color.White
         Me.IAP_Grid.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.IAP_Grid.Location = New System.Drawing.Point(913, 10)
-        Me.IAP_Grid.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.IAP_Grid.Margin = New System.Windows.Forms.Padding(2)
         Me.IAP_Grid.MultiSelect = False
         Me.IAP_Grid.Name = "IAP_Grid"
         Me.IAP_Grid.ReadOnly = True
@@ -638,20 +638,20 @@ Partial Class Main
         '
         Me.MAP_display_toggle.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MAP_display_toggle.Location = New System.Drawing.Point(123, 618)
-        Me.MAP_display_toggle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MAP_display_toggle.Margin = New System.Windows.Forms.Padding(2)
         Me.MAP_display_toggle.Name = "MAP_display_toggle"
-        Me.MAP_display_toggle.Size = New System.Drawing.Size(123, 28)
+        Me.MAP_display_toggle.Size = New System.Drawing.Size(94, 28)
         Me.MAP_display_toggle.TabIndex = 43
-        Me.MAP_display_toggle.Text = "None"
+        Me.MAP_display_toggle.Text = "Cell Count"
         Me.MAP_display_toggle.UseVisualStyleBackColor = True
         '
         'cell_Revisit_Input
         '
         Me.cell_Revisit_Input.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cell_Revisit_Input.Location = New System.Drawing.Point(152, 575)
-        Me.cell_Revisit_Input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cell_Revisit_Input.Margin = New System.Windows.Forms.Padding(2)
         Me.cell_Revisit_Input.Name = "cell_Revisit_Input"
-        Me.cell_Revisit_Input.Size = New System.Drawing.Size(46, 27)
+        Me.cell_Revisit_Input.Size = New System.Drawing.Size(46, 23)
         Me.cell_Revisit_Input.TabIndex = 44
         Me.cell_Revisit_Input.Text = "10"
         Me.cell_Revisit_Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -693,9 +693,9 @@ Partial Class Main
         '
         Me.map_switch_input.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.map_switch_input.Location = New System.Drawing.Point(152, 535)
-        Me.map_switch_input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.map_switch_input.Margin = New System.Windows.Forms.Padding(2)
         Me.map_switch_input.Name = "map_switch_input"
-        Me.map_switch_input.Size = New System.Drawing.Size(46, 27)
+        Me.map_switch_input.Size = New System.Drawing.Size(46, 23)
         Me.map_switch_input.TabIndex = 47
         Me.map_switch_input.Text = "11.2"
         Me.map_switch_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -704,7 +704,7 @@ Partial Class Main
         '
         Me.Help_About_BTN.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Help_About_BTN.Location = New System.Drawing.Point(9, 767)
-        Me.Help_About_BTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Help_About_BTN.Margin = New System.Windows.Forms.Padding(2)
         Me.Help_About_BTN.Name = "Help_About_BTN"
         Me.Help_About_BTN.Size = New System.Drawing.Size(110, 31)
         Me.Help_About_BTN.TabIndex = 49
@@ -726,9 +726,9 @@ Partial Class Main
         '
         Me.HighCLT_input.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HighCLT_input.Location = New System.Drawing.Point(152, 669)
-        Me.HighCLT_input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HighCLT_input.Margin = New System.Windows.Forms.Padding(2)
         Me.HighCLT_input.Name = "HighCLT_input"
-        Me.HighCLT_input.Size = New System.Drawing.Size(46, 27)
+        Me.HighCLT_input.Size = New System.Drawing.Size(46, 23)
         Me.HighCLT_input.TabIndex = 50
         Me.HighCLT_input.Text = "230"
         Me.HighCLT_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -739,7 +739,7 @@ Partial Class Main
         Me.status_Text.Enabled = False
         Me.status_Text.ForeColor = System.Drawing.Color.White
         Me.status_Text.Location = New System.Drawing.Point(2, 388)
-        Me.status_Text.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.status_Text.Margin = New System.Windows.Forms.Padding(2)
         Me.status_Text.MaximumSize = New System.Drawing.Size(196, 58)
         Me.status_Text.MinimumSize = New System.Drawing.Size(196, 19)
         Me.status_Text.Multiline = True
@@ -765,10 +765,10 @@ Partial Class Main
         'calTPSbutton
         '
         Me.calTPSbutton.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.calTPSbutton.Location = New System.Drawing.Point(9, 725)
-        Me.calTPSbutton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.calTPSbutton.Location = New System.Drawing.Point(9, 734)
+        Me.calTPSbutton.Margin = New System.Windows.Forms.Padding(2)
         Me.calTPSbutton.Name = "calTPSbutton"
-        Me.calTPSbutton.Size = New System.Drawing.Size(188, 38)
+        Me.calTPSbutton.Size = New System.Drawing.Size(188, 29)
         Me.calTPSbutton.TabIndex = 54
         Me.calTPSbutton.Text = "Calibrate TPS"
         Me.calTPSbutton.UseVisualStyleBackColor = True
@@ -779,7 +779,7 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.ClientSize = New System.Drawing.Size(1590, 857)
+        Me.ClientSize = New System.Drawing.Size(1540, 845)
         Me.Controls.Add(Me.calTPSbutton)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.status_Text)
@@ -828,7 +828,7 @@ Partial Class Main
         Me.Controls.Add(Me.EngPortSel)
         Me.Controls.Add(Me.Data_OnOff)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Main"
         Me.Text = "VooDoo_Gen1_DataLogger"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

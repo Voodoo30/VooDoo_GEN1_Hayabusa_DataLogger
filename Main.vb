@@ -52,12 +52,12 @@ Public Class Main
     Dim dataLog(200000, 15) As String
     Dim checkSumError As Integer = 0
     Dim z As Integer = 0            'alternates what user variable is read
-    Dim current_View As Integer = 2      'Map View Selected 0 = Cell Count, 1 = Avg A/F, 2 = None
-    Dim MapSwitch As Double = 11.2
-    Dim Cell_Revisit As Integer = 10
+    Dim current_View As Integer     'Map View Selected 0 = Cell Count, 1 = Avg A/F, 2 = None
+    Dim MapSwitch As Double
+    Dim Cell_Revisit As Integer
     Dim IAP_array(21, 42, 3)    'X, Y, [Cell Count, A/F running Total, A/F Avg]
     Dim TPS_array(23, 42, 3)    'X, Y, [Cell Count, A/F running Total, A/F Avg]
-    Dim HighCLT As Double = 230
+    Dim HighCLT As Double
     Dim wait_time As Integer = 1500
     Dim timer_interval As Integer = 150
     Dim twothirds As Integer
@@ -94,7 +94,7 @@ Public Class Main
             MessageBox.Show("An error occurred while searching valid COM ports " & ex.Message)
         End Try
 
-        'initialize arrays
+        'initialize arrays and display
         For x = 0 To 20
             For y = 0 To 41
                 For z = 0 To 2
@@ -109,14 +109,41 @@ Public Class Main
                 Next
             Next
         Next
-
         LoadMaps()
+
         Timer1.Interval = timer_interval
         Timer1.Enabled = False
+
+        My.Settings.Reload()
+        'Comm ports are saved, but I have to figure out how to implement with a drop down select
+        'EngCommPort = My.Settings.EngCommPort
+        'EngPortSel.Text = EngCommPort
+        'O2CommPort = My.Settings.O2CommPort
+        'o2PortSel.Text = O2CommPort
+
+        HighCLT = My.Settings.highCoolant
+        HighCLT_input.Text = HighCLT
+        current_View = My.Settings.displayView
+        If current_View = 1 Then
+            MAP_display_toggle.Text = "Avg A/F"
+            TPS_Grid.DefaultCellStyle.Format = "N1"
+            IAP_Grid.DefaultCellStyle.Format = "N1"
+        ElseIf current_View = 2 Then
+            MAP_display_toggle.Text = "None"
+        Else
+            MAP_display_toggle.Text = "Cell Count"
+            IAP_Grid.DefaultCellStyle.Format = "N0"
+            TPS_Grid.DefaultCellStyle.Format = "N0"
+        End If
+        MapSwitch = My.Settings.switchingPoint
+        map_switch_input.Text = MapSwitch
+        Cell_Revisit = My.Settings.requiredCell
+        cell_Revisit_Input.Text = Cell_Revisit
 
     End Sub
 
     Private Sub Main_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+
         If loggedDataExists = 1 Then
             If MessageBox.Show("There is unsaved logged data, are you sure you want to close?", "Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
             Else
@@ -138,6 +165,16 @@ Public Class Main
                 MsgBox("Closing, Issue closing O2 Comm Port. " & ex.Message)
             End Try
         End If
+
+        'Load User Settings
+        My.Settings.highCoolant = HighCLT
+        My.Settings.EngCommPort = EngCommPort
+        My.Settings.O2CommPort = O2CommPort
+        My.Settings.displayView = current_View
+        My.Settings.switchingPoint = MapSwitch
+        My.Settings.requiredCell = Cell_Revisit
+        My.Settings.Save()
+
     End Sub
 #End Region
 
