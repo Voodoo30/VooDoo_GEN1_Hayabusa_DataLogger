@@ -70,7 +70,7 @@ Public Class Main
 
 #End Region
 
-#Region "Form Loading"
+#Region "Form Opening/Closing"
     Private Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'Dim searcher As New ManagementObjectSearcher("root\WMI", "SELECT * FROM MSSerial_PortName WHERE InstanceName LIKE 'FTDI%'")
         Dim ports As String() = SerialPort.GetPortNames()
@@ -116,10 +116,10 @@ Public Class Main
 
         My.Settings.Reload()
         'Comm ports are saved, but I have to figure out how to implement with a drop down select
-        'EngCommPort = My.Settings.EngCommPort
-        'EngPortSel.Text = EngCommPort
-        'O2CommPort = My.Settings.O2CommPort
-        'o2PortSel.Text = O2CommPort
+        EngCommPort = My.Settings.EngCommPort
+        EngPortSel.SelectedItem = EngCommPort
+        O2CommPort = My.Settings.O2CommPort
+        o2PortSel.SelectedItem = O2CommPort
 
         HighCLT = My.Settings.highCoolant
         HighCLT_input.Text = HighCLT
@@ -166,7 +166,7 @@ Public Class Main
             End Try
         End If
 
-        'Load User Settings
+        'Save User Settings
         My.Settings.highCoolant = HighCLT
         My.Settings.EngCommPort = EngCommPort
         My.Settings.O2CommPort = O2CommPort
